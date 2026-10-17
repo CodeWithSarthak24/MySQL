@@ -75,6 +75,11 @@ for each row
 begin
 update UserDetail set account_count = account_count - 1 where id = old.id;
 end;//
+
+ -- UPDATE UserDetail
+-- SET account_count = account_count - 1
+-- WHERE id = OLD.id
+-- AND account_count > 0;
 delimiter ;
 
 -- update UserDetail set account_count = account_count - 1 where id = old.id;
