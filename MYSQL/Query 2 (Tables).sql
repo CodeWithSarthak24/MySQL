@@ -119,3 +119,6 @@ select Id, JobRole from Temp1
 -- CREATE TABLE IF NOT EXISTS duplicate_table   
 -- SELECT * FROM original_table WHERE Year = '2016';  
 -- WHERE condition;  
+
+-- change column and data type at same time
+alter table table_name change column old_column_name new_column_name new_data_type;
