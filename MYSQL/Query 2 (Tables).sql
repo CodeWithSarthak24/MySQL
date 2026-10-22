@@ -122,3 +122,11 @@ select Id, JobRole from Temp1
 
 -- change column and data type at same time
 alter table table_name change column old_column_name new_column_name new_data_type;
+
+-- Add auto_increment
+ALTER TABLE users 
+MODIFY COLUMN id INT NOT NULL AUTO_INCREMENT;
+
+-- show all constraint (retrive the exact data definition languages)
+
+show create table Table_name;
